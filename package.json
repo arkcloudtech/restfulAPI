@@ -1,0 +1,22 @@
+{
+  "name": "wm-customer-docs",
+  "version": "1.0.0",
+  "description": "Weedmaps API to manage Weed Purchase and Consumption Validity > User Access Control > Member Document Managements     - StateID     - MedicalRecommendation Card",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arkcloudtech/restfulAPI.git"
+  },
+  "author": "kmd",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/arkcloudtech/restfulAPI/issues"
+  },
+  "homepage": "https://github.com/arkcloudtech/restfulAPI#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}
