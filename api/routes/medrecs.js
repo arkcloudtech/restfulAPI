@@ -2,9 +2,11 @@ const express = require('express');
 const router = express.Router();
 const mongoose = require('mongoose');
 const MedicalRecommendation = require('../models/medrec');
-
+const multer = require('multer');
+const upload = multer({dest: 'images/medrec/'});
 // Create
-router.post('/', (req, res, next)=>{
+router.post('/', upload.single('image'), (req, res, next)=>{
+    console.log('about to upload and image:', req.file);
     const medRec = new MedicalRecommendation({
         _id: new mongoose.Types.ObjectId(),
         MedicalRecommendationNumber: req.body.MedicalRecommendationNumber,
