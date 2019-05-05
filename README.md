@@ -23,10 +23,15 @@ Tech Reqs (Server):
             > Users
             > Medical Records
             > State IDs
-    6) Authorization
+    6) Add Database Support
+        using mongodb
+            > setup remote db on mongodb Atlas
+            > require Mongoose
+            > setup Schemas
+    7) Authorization
             > add jsonwebtokens support
             > create middleware for routes to honor authorization
-    7) Upload Image Support
+    8) Upload Image Support
         use Multer
             > apply to MedRecs
             > apply to StateIDs
