@@ -3,8 +3,15 @@ const router = express.Router();
 
 // Create
 router.post('/', (req, res, next)=>{
+    const stateId = {
+        StateIdNumber: req.body.StateIdNumber,
+        State: req.body.State,
+        ExpirationDate: req.body.ExpirationDate,
+        ImagePath: req.body.ImagePath
+    }
     res.status(201).json({
-        message: "stateIdId added"
+        message: "StateId Added Successfully",
+        data: stateId
     });
 });
 

@@ -3,8 +3,17 @@ const router = express.Router();
 
 // Create
 router.post('/', (req, res, next)=>{
+    const user = {
+        Name: req.body.Name,
+        Email: req.body.Email,
+        Dob: req.body.Dob,
+        UserName: req.body.UserName,
+        Password: req.body.Password
+    };
+
     res.status(201).json({
-        message: "user added"
+        message: "User Added Successfully",
+        data: user
     });
 });
 

@@ -3,8 +3,16 @@ const router = express.Router();
 
 // Create
 router.post('/', (req, res, next)=>{
+    const medRec = {
+        MedicalRecommendationNumber: req.body.MedicalRecommendationNumber,
+        Issuer: req.body.Issuer,
+        State: req.body.State,
+        ExpirationDate: req.body.ExpirationDate,
+        ImagePath: req.body.ImagePath
+    }
     res.status(201).json({
-        message: "medrec added"
+        message: "MedicalRec Added Successfully",
+        data: medRec
     });
 });
 
